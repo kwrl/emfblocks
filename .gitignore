@@ -1,0 +1,6 @@
+// output folders
+bin/
+target/
+
+// platform-specific folders
+.DS_Store
