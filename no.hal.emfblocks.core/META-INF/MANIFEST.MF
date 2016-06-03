@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Emfblocks
+Bundle-SymbolicName: no.hal.emfblocks.core
+Bundle-Version: 0.9.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: no.hal.emfblocks,
+ no.hal.emfblocks.contour,
+ no.hal.emfblocks.cuteditor,
+ no.hal.emfblocks.hierarchy,
+ no.hal.emfblocks.javafx,
+ no.hal.emfblocks.javafx.fxml,
+ no.hal.emfblocks.slots,
+ no.hal.emfblocks.util.data,
+ no.hal.emfblocks.util.data.pfield,
+ no.hal.emfblocks.util.data.property

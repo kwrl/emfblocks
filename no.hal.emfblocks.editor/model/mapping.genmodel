@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/no.hal.emfblocks.editor/src" modelPluginID="no.hal.emfblocks.editor."
+    modelName="Mapping" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>mapping.ecore</foreignModel>
+  <genPackages prefix="Mapping" basePackage="no.hal.emfblocks" disposableProviderFactory="true"
+      ecorePackage="mapping.ecore#/">
+    <genDataTypes ecoreDataType="mapping.ecore#//EColor"/>
+    <genClasses ecoreClass="mapping.ecore#//MappingModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mapping.ecore#//MappingModel/objectMappingsByType"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//StringToObjectMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//StringToObjectMapping/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mapping.ecore#//StringToObjectMapping/value"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mapping.ecore#//ObjectMapping">
+      <genOperations ecoreOperation="mapping.ecore#//ObjectMapping/isEnabled"/>
+      <genOperations ecoreOperation="mapping.ecore#//ObjectMapping/getNameInfo"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//NoMapping"/>
+    <genClasses ecoreClass="mapping.ecore#//BlockMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//BlockMapping/defaultColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//BlockMapping/enabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//BlockMapping/nameInfo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mapping.ecore#//BlockMapping/formsByAttribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mapping.ecore#//BlockMapping/slotsByReference"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//StringToBlockFormMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//StringToBlockFormMapping/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mapping.ecore#//StringToBlockFormMapping/value"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//BlockFormMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//BlockFormMapping/enabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//BlockFormMapping/cellX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//BlockFormMapping/cellY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//BlockFormMapping/attributeFormFactoryClass"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//StringToSlotMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//StringToSlotMapping/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mapping.ecore#//StringToSlotMapping/value"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//SlotMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//SlotMapping/enabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//SlotMapping/horizontal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//SlotMapping/dominant"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//SlotMapping/cellX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//SlotMapping/cellY"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//WorkAreaMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaMapping/defaultColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaMapping/enabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaMapping/nameInfo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mapping.ecore#//WorkAreaMapping/containmentsByType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mapping.ecore#//WorkAreaMapping/formsByAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//StringToWorkAreaContainment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//StringToWorkAreaContainment/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mapping.ecore#//StringToWorkAreaContainment/value"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//WorkAreaContainment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaContainment/enabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaContainment/containmentReference"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//StringToWorkAreaFormMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//StringToWorkAreaFormMapping/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mapping.ecore#//StringToWorkAreaFormMapping/value"/>
+    </genClasses>
+    <genClasses ecoreClass="mapping.ecore#//WorkAreaFormMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaFormMapping/enabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaFormMapping/gridX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaFormMapping/gridY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaFormMapping/gridWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaFormMapping/gridHeight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mapping.ecore#//WorkAreaFormMapping/attributeFormFactoryClass"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

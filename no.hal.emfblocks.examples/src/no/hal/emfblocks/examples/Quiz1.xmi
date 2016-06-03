@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz:Quiz xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:quiz="platform:/plugin/no.hal.quiz.model/model/quiz.ecore" xsi:schemaLocation="platform:/plugin/no.hal.quiz.model/model/quiz.ecore quiz.ecore" name="my first quiz">
+  <parts xsi:type="quiz:QuizPart" name="part 1">
+    <questions xsi:type="quiz:QA">
+      <q xsi:type="quiz:StringQuestion" question="???"/>
+      <a xsi:type="quiz:StringAnswer"/>
+    </questions>
+  </parts>
+  <parts xsi:type="quiz:QuizPart"/>
+</quiz:Quiz>

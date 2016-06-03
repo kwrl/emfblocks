@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="ASCII"?>
+<mapping:MappingModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mapping="file://mappingModel/mappingmodel.ecore">
+  <objectMappingsByType key="ecore.EAttribute">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xff8080ff" nameInfo="&quot;%s: %s&quot;, eClass, name">
+      <formsByAttribute key="iD">
+        <value/>
+      </formsByAttribute>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EAnnotation">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xff8e80ff">
+      <formsByAttribute key="source">
+        <value/>
+      </formsByAttribute>
+      <slotsByReference key="details">
+        <value/>
+      </slotsByReference>
+      <slotsByReference key="eModelElement">
+        <value horizontal="true"/>
+      </slotsByReference>
+      <slotsByReference key="contents">
+        <value/>
+      </slotsByReference>
+      <slotsByReference key="references">
+        <value/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EClass">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xff9c80ff">
+      <formsByAttribute key="abstract">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="interface">
+        <value/>
+      </formsByAttribute>
+      <slotsByReference key="eSuperTypes">
+        <value horizontal="true"/>
+      </slotsByReference>
+      <slotsByReference key="eOperations">
+        <value cellY="1"/>
+      </slotsByReference>
+      <slotsByReference key="eStructuralFeatures">
+        <value/>
+      </slotsByReference>
+      <slotsByReference key="eGenericSuperTypes">
+        <value enabled="false"/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EClassifier">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xffab80ff">
+      <formsByAttribute key="instanceClassName">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="instanceTypeName">
+        <value/>
+      </formsByAttribute>
+      <slotsByReference key="eTypeParameters">
+        <value enabled="false"/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EDataType">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xffb980ff">
+      <formsByAttribute key="serializable">
+        <value/>
+      </formsByAttribute>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EEnum">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xffc880ff">
+      <slotsByReference key="eLiterals">
+        <value/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EEnumLiteral">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xffd680ff">
+      <formsByAttribute key="value">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="instance">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="literal">
+        <value/>
+      </formsByAttribute>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EFactory">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xffe580ff">
+      <slotsByReference key="ePackage">
+        <value horizontal="true"/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EModelElement">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xfff380ff">
+      <slotsByReference key="eAnnotations">
+        <value enabled="false"/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.ENamedElement">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xfdff80ff">
+      <formsByAttribute key="name">
+        <value/>
+      </formsByAttribute>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EObject">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xeeff80ff"/>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EOperation">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xe0ff80ff">
+      <slotsByReference key="eTypeParameters">
+        <value enabled="false"/>
+      </slotsByReference>
+      <slotsByReference key="eParameters">
+        <value cellY="1"/>
+      </slotsByReference>
+      <slotsByReference key="eExceptions">
+        <value/>
+      </slotsByReference>
+      <slotsByReference key="eGenericExceptions">
+        <value enabled="false"/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EPackage">
+    <value xsi:type="mapping:WorkAreaMapping" nameInfo="&quot;%s&quot;, name">
+      <containmentsByType key="ecore.EAnnotation">
+        <value containmentReference="eAnnotations"/>
+      </containmentsByType>
+      <containmentsByType key="ecore.EClassifier">
+        <value containmentReference="eClassifiers"/>
+      </containmentsByType>
+      <containmentsByType key="ecore.EPackage">
+        <value containmentReference="eSubpackages"/>
+      </containmentsByType>
+      <formsByAttribute key="name">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="nsURI">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="nsPrefix">
+        <value/>
+      </formsByAttribute>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EParameter">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xc3ff80ff"/>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EReference">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xb4ff80ff">
+      <formsByAttribute key="containment">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="resolveProxies">
+        <value/>
+      </formsByAttribute>
+      <slotsByReference key="eOpposite">
+        <value horizontal="true"/>
+      </slotsByReference>
+      <slotsByReference key="eKeys">
+        <value enabled="false"/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EStructuralFeature">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xa6ff80ff">
+      <formsByAttribute key="changeable">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="volatile">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="transient">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="defaultValueLiteral">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="unsettable">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="derived">
+        <value/>
+      </formsByAttribute>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.ETypedElement">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0x98ff80ff">
+      <formsByAttribute key="ordered">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="unique">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="lowerBound">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="upperBound">
+        <value/>
+      </formsByAttribute>
+      <slotsByReference key="eType">
+        <value horizontal="true"/>
+      </slotsByReference>
+      <slotsByReference key="eGenericType">
+        <value enabled="false" horizontal="true"/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EStringToStringMapEntry">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xff80c8ff">
+      <formsByAttribute key="key">
+        <value/>
+      </formsByAttribute>
+      <formsByAttribute key="value">
+        <value/>
+      </formsByAttribute>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.EGenericType">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xff80abff">
+      <slotsByReference key="eUpperBound">
+        <value horizontal="true"/>
+      </slotsByReference>
+      <slotsByReference key="eTypeArguments">
+        <value/>
+      </slotsByReference>
+      <slotsByReference key="eLowerBound">
+        <value horizontal="true"/>
+      </slotsByReference>
+      <slotsByReference key="eTypeParameter">
+        <value horizontal="true"/>
+      </slotsByReference>
+      <slotsByReference key="eClassifier">
+        <value horizontal="true"/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+  <objectMappingsByType key="ecore.ETypeParameter">
+    <value xsi:type="mapping:BlockMapping" defaultColor="0xff809cff">
+      <slotsByReference key="eBounds">
+        <value/>
+      </slotsByReference>
+    </value>
+  </objectMappingsByType>
+</mapping:MappingModel>

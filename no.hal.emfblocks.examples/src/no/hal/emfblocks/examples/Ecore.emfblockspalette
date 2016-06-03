@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ASCII"?>
+<palette:Palette xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:palette="file://mappingModel/palette.ecore">
+  <tabs name="Ecore">
+    <contents xsi:type="palette:PaletteItemContainer">
+      <object xsi:type="ecore:EClass"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer">
+      <object xsi:type="ecore:EReference"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer">
+      <object xsi:type="ecore:EAttribute"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer">
+      <object xsi:type="ecore:EDataType"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer">
+      <object xsi:type="ecore:EEnum"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer">
+      <object xsi:type="ecore:EEnumLiteral"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer">
+      <object xsi:type="ecore:EOperation"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer">
+      <object xsi:type="ecore:EParameter"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer" enabled="false">
+      <object/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer" enabled="false">
+      <object xsi:type="ecore:EStringToStringMapEntry"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer" enabled="false">
+      <object xsi:type="ecore:EAnnotation"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer" enabled="false">
+      <object xsi:type="ecore:EFactory"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer" enabled="false">
+      <object xsi:type="ecore:EGenericType"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemContainer" enabled="false">
+      <object xsi:type="ecore:ETypeParameter"/>
+    </contents>
+  </tabs>
+  <tabs name="Numeric Types">
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EFactory"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//ENamedElement"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//ETypeParameter"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EByte"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EByteObject"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EChar"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//ECharacterObject"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EFloatObject"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EShort"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EShortObject"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+    </contents>
+  </tabs>
+  <tabs name="Other Types">
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EEList"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EEnumerator"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EFeatureMap"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EJavaClass"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//ETreeIterator"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EResource"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference" enabled="false">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EResourceSet"/>
+    </contents>
+    <contents xsi:type="palette:PaletteItemReference">
+      <object href="http://www.eclipse.org/emf/2002/Ecore#//EInvocationTargetException"/>
+    </contents>
+  </tabs>
+</palette:Palette>

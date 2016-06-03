@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<TabPane xmlns:fx="http://javafx.com/fxml/1">
+	<Tab text="Blocks" closable="false">
+		<StackPane>
+			<SplitPane fx:id="wRootContent" dividerPositions="0.25">
+				<VBox fillWidth="true" SplitPane.resizableWithParent="false">
+					<StackPane fx:id="paletteParent" VBox.vgrow="ALWAYS"/>
+					<StackPane fx:id="trashParent" VBox.vgrow="NEVER"/>
+				</VBox>
+				<StackPane fx:id="workAreaParent"/>
+			</SplitPane>
+		</StackPane>
+	</Tab>
+	<Tab text="Configuration" closable="false">
+		<SplitPane dividerPositions="0.6">
+			<TreeView fx:id="configTree">
+			</TreeView>
+			<!-- 
+			 -->
+			<GridPane fx:id="configPropertiesGrid" SplitPane.resizableWithParent="false">
+			</GridPane>
+		</SplitPane>
+	</Tab>
+	<Tab text="Tabs/slots" closable="false">
+		<StackPane fx:id="cutEditorParent"/>
+	</Tab>
+</TabPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated mapping -->
+      <package
+            uri="platform:/plugin/no.hal.emfblocks.editor/model/mapping.ecore"
+            class="no.hal.emfblocks.mapping.MappingPackage"
+            genModel="model/mapping.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated layout -->
+      <package
+            uri="platform:/plugin/no.hal.emfblocks.editor/model/layout.ecore"
+            class="no.hal.emfblocks.layout.LayoutPackage"
+            genModel="model/layout.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated layout -->
+      <parser
+            type="blocks"
+            class="no.hal.emfblocks.layout.util.LayoutResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated palette -->
+      <package
+            uri="platform:/plugin/no.hal.emfblocks.editor/model/palette.ecore"
+            class="no.hal.emfblocks.palette.PalettePackage"
+            genModel="model/palette.genmodel"/>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            id="no.hal.emfblocks.editor.BlockEditor"
+            name="EMF Block Editor"
+            class="no.hal.emfblocks.editor.eclipse.BlockEditorPart"
+            contributorClass="no.hal.emfblocks.editor.eclipse.BlockEditorActionBarContributor"
+            default="false">
+      </editor>
+   </extension>
+
+</plugin>

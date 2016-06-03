@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/no.hal.emfblocks.editor/src" editDirectory="/no.hal.emfblocks.editor.edit/src"
+    editorDirectory="no.hal.emfblocks.editor.editor/src" modelPluginID="no.hal.emfblocks.editor"
+    modelName="Layout" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    usedGenPackages="mapping.genmodel#//mapping palette.genmodel#//palette" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>layout.ecore</foreignModel>
+  <genPackages prefix="Layout" basePackage="no.hal.emfblocks" resource="XMI" disposableProviderFactory="true"
+      fileExtensions="blocks" ecorePackage="layout.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="layout.ecore#//PointerArrowMode">
+      <genEnumLiterals ecoreEnumLiteral="layout.ecore#//PointerArrowMode/NEVER"/>
+      <genEnumLiterals ecoreEnumLiteral="layout.ecore#//PointerArrowMode/WHEN_FOCUSED"/>
+      <genEnumLiterals ecoreEnumLiteral="layout.ecore#//PointerArrowMode/ALWAYS"/>
+    </genEnums>
+    <genClasses ecoreClass="layout.ecore#//ResourceLayout">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference layout.ecore#//ResourceLayout/representationsByObject"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference layout.ecore#//ResourceLayout/mappingModel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference layout.ecore#//ResourceLayout/palette"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//ResourceLayout/focusedTabPaneIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//ResourceLayout/focusedTabIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//ResourceLayout/showPointerArrows"/>
+    </genClasses>
+    <genClasses ecoreClass="layout.ecore#//EObjectToJigsawRepresentation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference layout.ecore#//EObjectToJigsawRepresentation/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference layout.ecore#//EObjectToJigsawRepresentation/value"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="layout.ecore#//AbstractRepresentation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference layout.ecore#//AbstractRepresentation/object"/>
+    </genClasses>
+    <genClasses ecoreClass="layout.ecore#//WorkAreaRepresentation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//WorkAreaRepresentation/preferredTabPaneIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//WorkAreaRepresentation/preferredTabIndex"/>
+    </genClasses>
+    <genClasses ecoreClass="layout.ecore#//BlockRepresentation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//BlockRepresentation/preferredX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//BlockRepresentation/preferredY"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference layout.ecore#//BlockRepresentation/preferredContainer"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

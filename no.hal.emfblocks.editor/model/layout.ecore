@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="layout" nsURI="platform:/plugin/no.hal.emfblocks.editor/model/layout.ecore"
+    nsPrefix="layout">
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceLayout">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="representationsByObject"
+        upperBound="-1" eType="#//EObjectToJigsawRepresentation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mappingModel" lowerBound="1"
+        eType="ecore:EClass mapping.ecore#//MappingModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="palette" lowerBound="1"
+        eType="ecore:EClass palette.ecore#//Palette"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="focusedTabPaneIndex" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="focusedTabIndex" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="showPointerArrows" eType="#//PointerArrowMode"
+        defaultValueLiteral="Always"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EObjectToJigsawRepresentation" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="key" lowerBound="1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" lowerBound="1" eType="#//AbstractRepresentation"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractRepresentation" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="object" lowerBound="1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="WorkAreaRepresentation" eSuperTypes="#//AbstractRepresentation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="preferredTabPaneIndex"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        defaultValueLiteral="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="preferredTabIndex" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="-1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BlockRepresentation" eSuperTypes="#//AbstractRepresentation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="preferredX" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0"
+        unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="preferredY" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0"
+        unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="preferredContainer" eType="#//WorkAreaRepresentation"
+        unsettable="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PointerArrowMode">
+    <eLiterals name="NEVER" literal="Never"/>
+    <eLiterals name="WHEN_FOCUSED" value="1" literal="When Focused"/>
+    <eLiterals name="ALWAYS" value="2" literal="Always"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mapping="platform:/plugin/no.hal.emfblocks.editor/model/mapping.ecore" xmlns:palette="platform:/plugin/no.hal.emfblocks.editor/model/palette.ecore" xmlns:quiz="platform:/plugin/no.hal.quiz.model/model/quiz.ecore" xsi:schemaLocation="platform:/plugin/no.hal.quiz.model/model/quiz.ecore quiz.ecore">
+  <mapping:MappingModel>
+    <objectMappingsByType key="quiz.Quiz">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xff8080ff">
+        <formsByAttribute key="name">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="title">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="parts">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.AbstractQuizPart">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xff9b80ff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.QuizPartRef">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xffb680ff">
+        <slotsByReference key="partRef">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.QuizPart">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xffd180ff">
+        <formsByAttribute key="name">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="title">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="questions">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.AbstractQA">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xffed80ff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.QARef">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xf6ff80ff">
+        <slotsByReference key="qaRef">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.QA">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xdbff80ff">
+        <formsByAttribute key="name">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="q">
+          <value horizontal="true"/>
+        </slotsByReference>
+        <slotsByReference key="a">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.Question">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xbfff80ff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.StringQuestion">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xa4ff80ff">
+        <formsByAttribute key="question">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.XmlQuestion">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x89ff80ff">
+        <slotsByReference key="xml">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.Answer">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x80ff92ff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.OptionAnswer">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x80ffadff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.SimpleAnswer">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x80ffc8ff">
+        <formsByAttribute key="value">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.StringAnswer">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x80ffe4ff">
+        <formsByAttribute key="regexp">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="ignoreCase">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.NumberAnswer">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x80ffffff">
+        <formsByAttribute key="errorMargin">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.BooleanAnswer">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x80e4ffff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.XmlAnswer">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x80c8ffff">
+        <slotsByReference key="xml">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.OptionsAnswer">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x80adffff">
+        <slotsByReference key="options">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.Option">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x8092ffff">
+        <formsByAttribute key="correct">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="option">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.SingleOptionsAnswer">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x8980ffff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.ManyOptionsAnswer">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xa480ffff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.Xml">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xbf80ffff">
+        <slotsByReference key="element">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.XmlContents">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xdb80ffff">
+        <formsByAttribute key="post">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="element">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.XmlElement">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xf680ffff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.XmlPIAnswerElement">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xff80edff">
+        <slotsByReference key="answer">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.XmlTagElement">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xff80d1ff">
+        <formsByAttribute key="pre">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="endTag">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="startTag">
+          <value horizontal="true"/>
+        </slotsByReference>
+        <slotsByReference key="contents">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.XmlTag">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xff80b6ff">
+        <formsByAttribute key="name">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="attributes">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="quiz.XmlAttribute">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xff809bff">
+        <formsByAttribute key="name">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="value">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EAttribute">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xff8080ff">
+        <formsByAttribute key="iD">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EAnnotation">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xff8e80ff">
+        <formsByAttribute key="source">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="details">
+          <value/>
+        </slotsByReference>
+        <slotsByReference key="eModelElement">
+          <value horizontal="true"/>
+        </slotsByReference>
+        <slotsByReference key="contents">
+          <value/>
+        </slotsByReference>
+        <slotsByReference key="references">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EClass">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xff9c80ff">
+        <formsByAttribute key="abstract">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="interface">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="eSuperTypes">
+          <value/>
+        </slotsByReference>
+        <slotsByReference key="eOperations">
+          <value/>
+        </slotsByReference>
+        <slotsByReference key="eStructuralFeatures">
+          <value/>
+        </slotsByReference>
+        <slotsByReference key="eGenericSuperTypes">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EClassifier">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xffab80ff">
+        <formsByAttribute key="instanceClassName">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="instanceTypeName">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="eTypeParameters">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EDataType">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xffb980ff">
+        <formsByAttribute key="serializable">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EEnum">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xffc880ff">
+        <slotsByReference key="eLiterals">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EEnumLiteral">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xffd680ff">
+        <formsByAttribute key="value">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="instance">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="literal">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EFactory">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xffe580ff">
+        <slotsByReference key="ePackage">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EModelElement">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xfff380ff">
+        <slotsByReference key="eAnnotations">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.ENamedElement">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xfdff80ff">
+        <formsByAttribute key="name">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EObject">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xeeff80ff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EOperation">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xe0ff80ff">
+        <slotsByReference key="eTypeParameters">
+          <value/>
+        </slotsByReference>
+        <slotsByReference key="eParameters">
+          <value/>
+        </slotsByReference>
+        <slotsByReference key="eExceptions">
+          <value/>
+        </slotsByReference>
+        <slotsByReference key="eGenericExceptions">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EPackage">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xd1ff80ff">
+        <formsByAttribute key="nsURI">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="nsPrefix">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="eFactoryInstance">
+          <value horizontal="true"/>
+        </slotsByReference>
+        <slotsByReference key="eClassifiers">
+          <value/>
+        </slotsByReference>
+        <slotsByReference key="eSubpackages">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EParameter">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xc3ff80ff"/>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EReference">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xb4ff80ff">
+        <formsByAttribute key="containment">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="resolveProxies">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="eOpposite">
+          <value horizontal="true"/>
+        </slotsByReference>
+        <slotsByReference key="eKeys">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EStructuralFeature">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xa6ff80ff">
+        <formsByAttribute key="changeable">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="volatile">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="transient">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="defaultValueLiteral">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="unsettable">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="derived">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.ETypedElement">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x98ff80ff">
+        <formsByAttribute key="ordered">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="unique">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="lowerBound">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="upperBound">
+          <value/>
+        </formsByAttribute>
+        <slotsByReference key="eType">
+          <value horizontal="true"/>
+        </slotsByReference>
+        <slotsByReference key="eGenericType">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EStringToStringMapEntry">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x89ff80ff">
+        <formsByAttribute key="key">
+          <value/>
+        </formsByAttribute>
+        <formsByAttribute key="value">
+          <value/>
+        </formsByAttribute>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.EGenericType">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x80ff84ff">
+        <slotsByReference key="eUpperBound">
+          <value horizontal="true"/>
+        </slotsByReference>
+        <slotsByReference key="eTypeArguments">
+          <value/>
+        </slotsByReference>
+        <slotsByReference key="eLowerBound">
+          <value horizontal="true"/>
+        </slotsByReference>
+        <slotsByReference key="eTypeParameter">
+          <value horizontal="true"/>
+        </slotsByReference>
+        <slotsByReference key="eClassifier">
+          <value horizontal="true"/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+    <objectMappingsByType key="ecore.ETypeParameter">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x80ff93ff">
+        <slotsByReference key="eBounds">
+          <value/>
+        </slotsByReference>
+      </value>
+    </objectMappingsByType>
+  </mapping:MappingModel>
+  <palette:Palette>
+    <tabs>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:Quiz"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:QuizPartRef"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:QuizPart"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:QARef"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:QA"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:StringQuestion"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:XmlQuestion"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:StringAnswer"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:NumberAnswer"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:BooleanAnswer"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:XmlAnswer"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:OptionsAnswer"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:Option"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:SingleOptionsAnswer"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:ManyOptionsAnswer"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:Xml"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:XmlContents"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:XmlPIAnswerElement"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:XmlTagElement"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:XmlTag"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemContainer">
+        <object xsi:type="quiz:XmlAttribute"/>
+      </contents>
+    </tabs>
+    <tabs name="Ecore Literals">
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EAnnotation"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EFactory"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EModelElement"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//ENamedElement"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//ETypedElement"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EGenericType"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//ETypeParameter"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EByte"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EByteObject"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EChar"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//ECharacterObject"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EEList"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EEnumerator"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EFeatureMap"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EFloatObject"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EJavaClass"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EResource"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EResourceSet"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EShort"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EShortObject"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//ETreeIterator"/>
+      </contents>
+      <contents xsi:type="palette:PaletteItemReference">
+        <object href="http://www.eclipse.org/emf/2002/Ecore#//EInvocationTargetException"/>
+      </contents>
+    </tabs>
+  </palette:Palette>
+</xmi:XMI>
