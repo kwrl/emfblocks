@@ -26,9 +26,9 @@ public class SingleResourceConfigLoader implements BlocksConfigLoader {
 	@Override
 	public boolean loadConfig(EPackage pack, URI resourceURI, ResourceSet resourceSet) {
 		URI configURI = configURIProvider.getConfigURI(pack, resourceURI);
-		Resource configResource = resourceSet.createResource(configURI);
+		Resource configResource = resourceSet.getResource(configURI, true);
 		try {
-			configResource.load(null);
+			configResource.getContents();
 		} catch (Exception e) {
 		}
 		EList<EObject> contents = configResource.getContents();

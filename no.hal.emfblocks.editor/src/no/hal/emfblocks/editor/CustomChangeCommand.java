@@ -11,9 +11,14 @@
 package no.hal.emfblocks.editor;
 
 import java.util.Arrays;
+import java.util.Collection;
 
 import org.eclipse.emf.common.command.AbstractCommand;
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.EMap;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.change.ChangeDescription;
+import org.eclipse.emf.ecore.change.FeatureChange;
 import org.eclipse.emf.ecore.change.util.ChangeRecorder;
 import org.eclipse.emf.ecore.resource.Resource;
 
@@ -71,13 +76,17 @@ public class CustomChangeCommand extends AbstractCommand {
 	}
 
 	@Override
+	public Collection<?> getAffectedObjects() {
+		return changeDescription.getObjectChanges().keySet();
+	}
+	
+	@Override
 	public void undo() {
 		changeDescription.applyAndReverse();
 	}
 
 	public void redo() {
-		changeDescription.applyAndReverse();// The order of operations here is
-											// wrong, but we've dealt with it in
-											// the rest of the code
+		changeDescription.applyAndReverse();
+		// The order of operations here is wrong, but we've dealt with it in the rest of the code
 	}
 }

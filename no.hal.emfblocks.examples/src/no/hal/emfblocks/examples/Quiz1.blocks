@@ -2,7 +2,7 @@
 <layout:ResourceLayout xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:layout="platform:/plugin/no.hal.emfblocks.editor/model/layout.ecore">
   <representationsByObject>
     <key href="Quiz1.xmi#/"/>
-    <value xsi:type="layout:BlockRepresentation" preferredX="141" preferredY="58">
+    <value xsi:type="layout:BlockRepresentation" preferredX="56" preferredY="175">
       <object href="Quiz1.xmi#/"/>
     </value>
   </representationsByObject>
@@ -13,21 +13,15 @@
     </value>
   </representationsByObject>
   <representationsByObject>
-    <key href="Quiz1.xmi#//@parts.1"/>
+    <key href="Quiz1.xmi#//@parts.0/@questions.0"/>
     <value xsi:type="layout:BlockRepresentation">
-      <object href="Quiz1.xmi#//@parts.1"/>
+      <object href="Quiz1.xmi#//@parts.0/@questions.0"/>
     </value>
   </representationsByObject>
   <representationsByObject>
     <key href="Quiz1.xmi#//@parts.0/@questions.0/@q"/>
-    <value xsi:type="layout:BlockRepresentation" preferredX="-43" preferredY="303">
+    <value xsi:type="layout:BlockRepresentation" preferredX="113" preferredY="149">
       <object href="Quiz1.xmi#//@parts.0/@questions.0/@q"/>
-    </value>
-  </representationsByObject>
-  <representationsByObject>
-    <key href="Quiz1.xmi#//@parts.0/@questions.0"/>
-    <value xsi:type="layout:BlockRepresentation">
-      <object href="Quiz1.xmi#//@parts.0/@questions.0"/>
     </value>
   </representationsByObject>
   <representationsByObject>
@@ -35,6 +29,15 @@
     <value xsi:type="layout:BlockRepresentation">
       <object href="Quiz1.xmi#//@parts.0/@questions.0/@a"/>
     </value>
+  </representationsByObject>
+  <representationsByObject>
+    <key href="Quiz1.xmi#//@parts.1"/>
+    <value xsi:type="layout:BlockRepresentation">
+      <object href="Quiz1.xmi#//@parts.1"/>
+    </value>
+  </representationsByObject>
+  <representationsByObject>
+    <value xsi:type="layout:WorkAreaRepresentation"/>
   </representationsByObject>
   <mappingModel href="quiz.blocksConfig#/0"/>
   <palette href="quiz.blocksConfig#/1"/>

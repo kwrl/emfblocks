@@ -15,17 +15,17 @@
       </value>
     </objectMappingsByType>
     <objectMappingsByType key="quiz.AbstractQuizPart">
-      <value xsi:type="mapping:BlockMapping" defaultColor="0xff9b80ff"/>
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xff9c80ff"/>
     </objectMappingsByType>
     <objectMappingsByType key="quiz.QuizPartRef">
-      <value xsi:type="mapping:BlockMapping" defaultColor="0xffb680ff">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xffff80ff">
         <slotsByReference key="partRef">
           <value horizontal="true"/>
         </slotsByReference>
       </value>
     </objectMappingsByType>
     <objectMappingsByType key="quiz.QuizPart">
-      <value xsi:type="mapping:BlockMapping" defaultColor="0xffd180ff">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0xffff00ff">
         <formsByAttribute key="name">
           <value/>
         </formsByAttribute>
@@ -53,7 +53,7 @@
           <value/>
         </formsByAttribute>
         <slotsByReference key="q">
-          <value horizontal="true"/>
+          <value/>
         </slotsByReference>
         <slotsByReference key="a">
           <value horizontal="true"/>
@@ -64,7 +64,7 @@
       <value xsi:type="mapping:BlockMapping" defaultColor="0xbfff80ff"/>
     </objectMappingsByType>
     <objectMappingsByType key="quiz.StringQuestion">
-      <value xsi:type="mapping:BlockMapping" defaultColor="0xa4ff80ff">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x00fffffe">
         <formsByAttribute key="question">
           <value/>
         </formsByAttribute>
@@ -91,7 +91,7 @@
       </value>
     </objectMappingsByType>
     <objectMappingsByType key="quiz.StringAnswer">
-      <value xsi:type="mapping:BlockMapping" defaultColor="0x80ffe4ff">
+      <value xsi:type="mapping:BlockMapping" defaultColor="0x00ff00ff">
         <formsByAttribute key="regexp">
           <value/>
         </formsByAttribute>
