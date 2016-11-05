@@ -59,8 +59,9 @@ public class DecoratedModelInstance {
 				}
 			}
 		} else {
-			for (EObject eObject : existing.getContents()) {
-				EPackage pack = eObject.eClass().getEPackage();
+			TreeIterator<EObject> it = EcoreUtil.getAllContents(existing, true);
+			while(it.hasNext()) {
+				EPackage pack = it.next().eClass().getEPackage();
 				if (! packageList.contains(pack)) {
 					packageList.add(pack);
 				}
