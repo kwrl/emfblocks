@@ -53,15 +53,19 @@ public class DecoratedModelInstance {
 		if ("ecore".equals(resourceURI.fileExtension())) {
 			resourceURI = resourceURI.trimFileExtension().appendFileExtension(DEFAULT_INSTANCE_FILE_EXTENSION);
 			this.instanceResource = getResource(resourceURI, resourceSet, true);
-			for (EObject eObject : existing.getContents()) {
+			TreeIterator<EObject> it = EcoreUtil.getAllContents(existing, true);
+			EObject eObject;
+			while(it.hasNext()) {
+				eObject = it.next();
 				if (eObject instanceof EPackage && (! packageList.contains(eObject))) {
 					packageList.add((EPackage) eObject);
 				}
 			}
 		} else {
 			TreeIterator<EObject> it = EcoreUtil.getAllContents(existing, true);
+			EPackage pack;
 			while(it.hasNext()) {
-				EPackage pack = it.next().eClass().getEPackage();
+				pack = it.next().eClass().getEPackage();
 				if (! packageList.contains(pack)) {
 					packageList.add(pack);
 				}
