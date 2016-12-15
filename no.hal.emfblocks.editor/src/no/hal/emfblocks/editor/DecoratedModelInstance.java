@@ -101,9 +101,9 @@ public class DecoratedModelInstance {
 	}
 
 	private static Resource getResource(URI resourceURI, ResourceSet resourceSet, boolean logEmpty) {
-		Resource resource = resourceSet.createResource(resourceURI);
+		Resource resource = resourceSet.getResource(resourceURI, true);
 		try {
-			resource.load(null);
+			resource.getContents();
 			if (logEmpty && resource.getContents().isEmpty()) {
 				System.err.println(resourceURI + " is empty");
 			}
